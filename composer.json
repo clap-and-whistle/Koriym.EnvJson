@@ -1,6 +1,7 @@
+
 {
     "name": "koriym/env-json",
-    "description": "",
+    "description": "Type-safe, schema-driven alternative to .env files with JSON Schema validation",
     "license": "MIT",
     "authors": [
         {
