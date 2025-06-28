@@ -27,7 +27,7 @@ if ($argc !== 2) {
 [, $iniFile] = $argv;
 
 if (! file_exists($iniFile)) {
-    echo "$iniFile not exited." . PHP_EOL;
+    echo "$iniFile does not exist." . PHP_EOL;
     exit(1);
 }
 
