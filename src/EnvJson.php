@@ -145,7 +145,7 @@ final class EnvJson
                 }
 
                 // Merge dist into env data, overwriting existing keys
-                $envData = array_merge($envData, $decodedDist);
+                $envData = array_merge($decodedDist, $envData);
             } catch (JsonException $e) {
                 throw new InvalidJsonContentException("Invalid JSON in env.dist file: {$envDistJsonFile} - " . $e->getMessage(), 0, $e);
             } catch (InvalidJsonFileException $e) { // @codeCoverageIgnore
