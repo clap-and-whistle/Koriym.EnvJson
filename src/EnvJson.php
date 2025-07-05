@@ -144,7 +144,7 @@ final class EnvJson
                     throw new InvalidEnvJsonFormatException("Invalid JSON format in env.dist file: {$envDistJsonFile}. Expected array.");
                 }
 
-                // Merge dist into env data, overwriting existing keys
+                // Merge env into dist data, overwriting existing keys
                 $envData = array_merge($decodedDist, $envData);
             } catch (JsonException $e) {
                 throw new InvalidJsonContentException("Invalid JSON in env.dist file: {$envDistJsonFile} - " . $e->getMessage(), 0, $e);
